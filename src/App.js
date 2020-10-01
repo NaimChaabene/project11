@@ -1,26 +1,27 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from  'react';
+import './app.css';
+import {Button,Form,FormGroup,Label,Input} from 'reactstrap';
+
+ 
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <form className="login-form">
+    <h1 className="font-weight-bold text-center"> Monsiteweb.com </h1>
+    <h2 className="text-center">Welcome</h2>
+    <FormGroup className="d-flex justify-content-between">
+      <label>Email </label>
+      <input type="email" placeholder="Email"></input>
+    </FormGroup>
+    <FormGroup className="d-flex justify-content-between">
+      <label>Password </label>
+      <input type="password" placeholder="Password "></input>
+    </FormGroup>
+    <Button className="btn-lg btn-dark btn-block">Log in</Button> 
+        <a href="/sign-up">Forgot Password?</a>
+
+    </form>
   );
-}
+  }
 
 export default App;
